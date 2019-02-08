@@ -30,5 +30,5 @@ func main() {
 	mux := http.NewServeMux()
 	mux.Handle("/first/", h)
 	mux.Handle("/second", hs)
-	log.Fatal(http.ListenAndServe(":8085", mux))
+	log.Fatal(http.ListenAndServe(":8085", mux)) // Passing in mux
 }

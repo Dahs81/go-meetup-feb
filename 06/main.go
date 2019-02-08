@@ -15,6 +15,8 @@ should be pretty familiar.
 */
 
 func h(w http.ResponseWriter, r *http.Request) {
+	// You could inspect r.Method and r.URL and do
+	// 
 	fmt.Fprintln(w, "This is a simple example")
 }
 
